@@ -1,3 +1,5 @@
+// dino
+
 let image = document.getElementById("image");
 let images = [
   "./assets/images/ark2.png",
