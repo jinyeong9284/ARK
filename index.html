@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="./index.css" />
 
     <!-- jQuery -->
-    <script src="../assets/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="./index.js" defer></script>
   </head>
   <body>
@@ -131,19 +133,52 @@
       <div class="budle-container">
         <div class="budle-contents">
           <div class="budle-contents1">
-            <p>₩ 38,330</p>
-            <p>23%</p>
+            <p class="price">￦38,330</p>
+            <div class="count-wrapper"><p class="count" id="count" data-target="23">0</p><span class="count">%</span></div>
             <img src="./assets/images/Cosmetic_HLNA.png" alt="ark1" />
             <img src="./assets/images/Cosmetic_Noglin.png" alt="ark2" />
             <img src="./assets/images/Cosmetic_Shadowmane_5.png" alt="ark3" />
             <img src="./assets/images/Logo_GenesisPart1.png" alt="ark4" />
-            <p>
+            <p class="edition">
               Buy ARK: Ultimate Survivor Edition <br />
               BUNDLE
             </p>
           </div>
+          <div class="bundle-contents2">
+            <p>GENESIS<br>SEASON<br>PASS</p>
+            <img src="./assets/images/Cosmetic_FederationExoSuit_V1A.png" alt="">
+          <p>￦16,500</p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="pick-wrapper"  id="button">
+      <p class="type-text">PICK YOUR <br>TYPE</p>
+      <div class="pick-dino">
+      <div class="dino1">
+        <img src="./assets/images/theri.png" alt="ark" class="theri">
+        <div class="btn"><div class="button button1"></div>
+        <p class="learn">LEARN MORE</p></div>
+        <div class="theri-text">
+        <p>테리지노사우루스</p>
+        <p>긴 발톱으로 유명한 테리지노사우루스로,<br> 
+          머리가 좀 크고 측면에 깃털이 모자란 것을 제외하면<br>
+          다른 공룡들에 비해서 현실과 꽤나 근접한 모습이다.</p>
+        </div>
+      </div>
+      <div class="dino2">
+        <img src="./assets/images/ark11.png" alt="ark" class="pte">
+        <div class="btn"><div class="button button2"></div>
+        <p class="learn">LEARN MORE</p></div>
+        <div>
+          <p>프테라노돈</p>
+          <p>긴 발톱으로 유명한 테리지노사우루스로,<br> 
+            머리가 좀 크고 측면에 깃털이 모자란 것을 제외하면<br>
+            다른 공룡들에 비해서 현실과 꽤나 근접한 모습이다.</p>
+          </div>
+      </div>
+    </div>
     </section>
   </body>
 </html>
