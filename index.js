@@ -1,5 +1,8 @@
 // info
-gsap.set(".text-container .text-wrapper1", { width: 5,backgroundColor:"#e1f41d"});
+gsap.set(".text-container .text-wrapper1", {
+  width: 5,
+  backgroundColor: "#e1f41d",
+});
 
 gsap
   .timeline({
@@ -15,10 +18,13 @@ gsap
     duration: 1,
     ease: "none",
     stagger: 5,
-    backgroundColor:"#000"
+    backgroundColor: "#000",
   });
 
-  gsap.set(".text-container .text-wrapper2", { width: 5,backgroundColor:"#e1f41d"});
+gsap.set(".text-container .text-wrapper2", {
+  width: 5,
+  backgroundColor: "#e1f41d",
+});
 
 gsap
   .timeline({
@@ -34,63 +40,75 @@ gsap
     duration: 1,
     ease: "none",
     stagger: 5,
-    backgroundColor:"#000"
+    backgroundColor: "#000",
   });
-  gsap.set(".text-container .text-wrapper3", { width: 5,backgroundColor:"#e1f41d"});
+gsap.set(".text-container .text-wrapper3", {
+  width: 5,
+  backgroundColor: "#e1f41d",
+});
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".text-container .text-wrapper3",
-        scrub: 1,
-        start: "-=400",
-        end: "bottom bottom",
-      },
-    })
-    .to(".text-container .text-wrapper3", {
-      width: 470,
-      duration: 1,
-      ease: "none",
-      stagger: 5,
-      backgroundColor:"#000"
-    });
-    gsap.set(".text-container .text-wrapper4", { width: 5,backgroundColor:"#e1f41d"});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".text-container .text-wrapper3",
+      scrub: 1,
+      start: "-=500",
+      end: "bottom bottom",
+    },
+  })
+  .to(".text-container .text-wrapper3", {
+    width: 470,
+    duration: 1,
+    ease: "none",
+    stagger: 5,
+    backgroundColor: "#000",
+  });
+gsap.set(".text-container .text-wrapper4", {
+  width: 5,
+  backgroundColor: "#e1f41d",
+});
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".text-container .text-wrapper4",
-          scrub: 1,
-          start: "-=500",
-          end: "bottom bottom",
-        },
-      })
-      .to(".text-container .text-wrapper4", {
-        width: 615,
-        duration: 1,
-        ease: "none",
-        stagger: 5,
-        backgroundColor:"#000"
-      });
-      gsap.set(".text-container .text-wrapper5", { width: 5,backgroundColor:"#e1f41d"});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".text-container .text-wrapper4",
+      scrub: 1,
+      start: "-=500",
+      end: "bottom bottom",
+    },
+  })
+  .to(".text-container .text-wrapper4", {
+    width: 615,
+    duration: 1,
+    ease: "none",
+    stagger: 5,
+    backgroundColor: "#000",
+  });
+gsap.set(".text-container .text-wrapper5", {
+  width: 5,
+  backgroundColor: "#e1f41d",
+});
 
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".text-container .text-wrapper5",
-            scrub: 1,
-            start: "-=600",
-            end: "bottom bottom",
-          },
-        })
-        .to(".text-container .text-wrapper5", {
-          width: 670,
-          duration: 1,
-          ease: "none",
-          stagger: 5,
-          backgroundColor:"#000"
-        });
-        gsap.set(".text-container .text-wrapper6", { width: 5,backgroundColor:"#e1f41d"});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".text-container .text-wrapper5",
+      scrub: 1,
+      start: "-=600",
+      end: "bottom bottom",
+    },
+  })
+  .to(".text-container .text-wrapper5", {
+    width: 670,
+    duration: 1,
+    ease: "none",
+    stagger: 5,
+    backgroundColor: "#000",
+  });
+gsap.set(".text-container .text-wrapper6", {
+  width: 5,
+  backgroundColor: "#e1f41d",
+});
 
 gsap
   .timeline({
@@ -106,18 +124,18 @@ gsap
     duration: 1,
     ease: "none",
     stagger: 5,
-    backgroundColor:"#000"
+    backgroundColor: "#000",
   });
 
-  // dino
+// dino
 let image = document.getElementById("image");
 let images = [
-  "./assets/images/ark2.png",
-  "./assets/images/ark3.png",
+  "./assets/images/crab.png",
+  "./assets/images/sarko.png",
+  "./assets/images/shark.png",
+  "./assets/images/tech.png",
+  "./assets/images/turtle.png",
   "./assets/images/ark4.png",
-  "./assets/images/ark5.png",
-  "./assets/images/ark6.png",
-  "./assets/images/ark7.png",
 ];
 let intervalId = setInterval(function () {
   let random = Math.floor(Math.random() * images.length);
@@ -148,9 +166,8 @@ function scrollE() {
   var countingOffset = counting_wrap.offsetTop;
   var viewportHeight = window.innerHeight;
 
-  if (currentScroll >= countingOffset + viewportHeight /200) {
-
-    counting(0,23, count);
+  if (currentScroll >= countingOffset + viewportHeight / 200) {
+    counting(0, 23, count);
   }
 }
 
@@ -181,3 +198,12 @@ $(".pick-wrapper .pick-dino .button1").on("click", (e) => {
   $(".pick-wrapper .type-text").toggleClass("toggle-btn");
   $(".pick-wrapper .pick-dino .theri-text").toggleClass("toggle-btn");
 });
+$(".pick-wrapper .pick-dino .button2").on("click", (e) => {
+  $(".pick-wrapper .pick-dino .button2").toggleClass("toggle-btn");
+  $(".pick-wrapper .pick-dino .dino2 .learn").toggleClass("toggle-btn");
+  $(".pick-wrapper .pick-dino .dino2").toggleClass("toggle-btn");
+  $(".pick-wrapper .type-text").toggleClass("toggle-btn");
+  $(".pick-wrapper .pick-dino .doye-text").toggleClass("toggle-btn");
+});
+
+// swiper wrapper
