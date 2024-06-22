@@ -818,4 +818,216 @@ nav ul li::before {
   transform: rotate(180deg);
 }
 
-/* movie */
+/* video */
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #76a2d1;
+  padding-bottom: 20px;
+}
+.video-wrapper .video-container {
+  width: 85%;
+  height: 100%;
+  padding: 5%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20px;
+}
+.video-wrapper .video-container p {
+  font-weight: 800;
+  font-size: 120px;
+  font-family: var(--font-en);
+  text-align: center;
+  padding: 50px 0;
+}
+.video-wrapper .video-container iframe {
+  aspect-ratio: 16/9;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+/* ENCYCLOPEDIA */
+.ency-wrapper {
+  background-color: #76a2d1;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.ency-wrapper p {
+  color: #fff;
+}
+.ency-wrapper img {
+  display: block;
+  width: 15%;
+  margin: auto;
+}
+.ency-wrapper .title {
+  margin-top: 3%;
+  font-size: 120px;
+  font-weight: 800;
+  color: #fff;
+  font-family: var(--font-en);
+  text-align: center;
+}
+.ency-wrapper .dino-title {
+  font-family: var(--font-en);
+  font-size: 80px;
+  font-weight: 800;
+  opacity: 0;
+  transition: 0.7s;
+  transform: translateY(20%);
+}
+.ency-wrapper .dino-contents {
+  font-family: var(--font-ko);
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.7s;
+  transform: translateY(50%);
+}
+.ency-wrapper .dino1:hover {
+  background: url(./assets/images/dino1-hover-img.png) 50% / cover;
+  transition: 0.7s;
+}
+.dino1:hover .dino-title {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.dino1:hover .dino-contents {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.ency-wrapper .dino1 {
+  width: 60%;
+  background: url(./assets/images/dino1.png) 50% / cover;
+  height: 34.5vw;
+  margin: 6% auto 0;
+  clip-path: polygon(0 0, 100% 0%, 100% 91.7%, 0 63.2%);
+  position: relative;
+}
+.ency-wrapper .dino1 img {
+  position: absolute;
+  width: 100%;
+}
+.ency-wrapper .dino1 .dino-title {
+  padding: 5% 5% 2%;
+}
+.ency-wrapper .dino1 .dino-contents {
+  padding: 0 5.5%;
+}
+.ency-wrapper .dino-flex {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.ency-wrapper .dino2 {
+  width: 29%;
+  background: url(./assets/images/dino2.png) 50% / cover;
+  height: 39vw;
+  clip-path: polygon(0 0, 100% 11%, 100% 91.2%, 0% 78.5%);
+  position: relative;
+  margin-top: -11%;
+}
+.ency-wrapper .dino2 img {
+  position: absolute;
+  width: 100%;
+}
+.ency-wrapper .dino2:hover {
+  background: url(./assets/images/dino2-hover-img.png) 50% / cover;
+  transition: 0.7s;
+}
+.dino2:hover .dino-title {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.dino2:hover .dino-contents {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.ency-wrapper .dino2 .dino-title {
+  padding: 70% 5% 2%;
+}
+.ency-wrapper .dino2 .dino-contents {
+  padding: 0 5.5%;
+}
+.ency-wrapper .dino3 {
+  width: 29%;
+  background: url(./assets/images/dino3.png) 100% / cover;
+  height: 39vw;
+  clip-path: polygon(0 0, 100% 12.5%, 100% 94.3%, 0% 81.3%);
+  position: relative;
+  margin-top: -6.5%;
+}
+.ency-wrapper .dino3 img {
+  position: absolute;
+  width: 100%;
+}
+.ency-wrapper .dino3:hover {
+  background: url(./assets/images/dino3-hover-img.png) 50% / cover;
+  transition: 0.7s;
+}
+.dino3:hover .dino-title {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.dino3:hover .dino-contents {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.ency-wrapper .dino3 .dino-title {
+  padding: 70% 5% 2%;
+}
+.ency-wrapper .dino3 .dino-contents {
+  padding: 0 5.5%;
+}
+.ency-wrapper .dino4:hover {
+  background: url(./assets/images/dino4-hover-img.png) 100% 100% / cover;
+  transition: 0.7s;
+}
+.dino4:hover .dino-title {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.dino4:hover .dino-contents {
+  opacity: 1;
+  transition: 0.7s;
+  transform: translateY(0%);
+}
+.ency-wrapper .dino4 {
+  width: 60%;
+  background: url(./assets/images/dino4.png) 50% / cover;
+  height: 31.5vw;
+  margin: 6% auto 0;
+  clip-path: polygon(0 0, 100% 31.5%, 100% 100%, 0 100%);
+  position: relative;
+  margin-top: -11%;
+}
+.ency-wrapper .dino4 img {
+  position: absolute;
+  width: 100%;
+}
+.ency-wrapper .dino4 .dino-title {
+  padding: 30% 5% 2%;
+}
+.ency-wrapper .dino4 .dino-contents {
+  padding: 0 5.5%;
+}
+.boss-wrapper {
+  background-color: #76a2d1;
+  padding-top: 10%;
+}
+.boss-wrapper .title {
+  font-size: 100px;
+  font-family: var(--font-en);
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+}
