@@ -127,7 +127,7 @@ gsap
     backgroundColor: "#000",
   });
 
-// dino
+// dino-img
 let image = document.getElementById("image");
 let images = [
   "./assets/images/crab.png",
@@ -155,6 +155,27 @@ image.addEventListener("mouseleave", function () {
     image.src = images[random];
   }, 200);
 });
+
+gsap.set(".info-dino-wrapper p:first-of-type", {
+  width: 0,
+  backgroundColor: "#e1f41d",
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".info-dino-wrapper",
+      scrub: 1,
+      start: "-=100",
+      end: "bottom bottom",
+    },
+  })
+  .to(".info-dino-wrapper p:first-of-type", {
+    width: "20vw",
+    duration: 0.6,
+    ease: "none",
+    stagger: 2,
+  });
 
 // number counting
 //scroll counting start
@@ -206,6 +227,70 @@ $(".pick-wrapper .pick-dino .button2").on("click", (e) => {
   $(".pick-wrapper .pick-dino .doye-text").toggleClass("toggle-btn");
 });
 
+gsap.set(".pick-wrapper .pick-dino .dino1 img", {
+  marginLeft: -1000,
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".pick-wrapper .pick-dino",
+      scrub: 1,
+      start: "-=500",
+      end: "center bottom",
+    },
+  })
+  .to(".pick-wrapper .pick-dino .dino1 img", {
+    marginLeft: 0,
+    duration: 1,
+    ease: "none",
+    stagger: 1,
+    transition: 0.3,
+  });
+
+gsap.set(".pick-wrapper .type-text", {
+  top: "80%",
+  opacity: 0,
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".pick-wrapper .pick-dino",
+      scrub: 1,
+      start: "-=500",
+      end: "center bottom",
+    },
+  })
+  .to(".pick-wrapper .type-text", {
+    top: "50%",
+    opacity: 1,
+    duration: 1,
+    ease: "none",
+    stagger: 1,
+    transition: 0.1,
+  });
+
+gsap.set(".pick-wrapper .pick-dino .pte", {
+  left: "100%",
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".pick-wrapper .pick-dino",
+      scrub: 1,
+      start: "-=500",
+      end: "center bottom",
+    },
+  })
+  .to(".pick-wrapper .pick-dino .pte", {
+    left: "50%",
+    duration: 1,
+    ease: "none",
+    stagger: 1,
+    transition: 0.3,
+  });
 // weapon wrapper
 $(function () {
   let current = 0;
@@ -260,4 +345,20 @@ $(function () {
     simpleSlide(current + 1);
     $(".weapon-kok-img").removeClass("next").eq(current).addClass("next");
   });
+});
+
+let scrollContainer = document.querySelector(".boss-wrapper .boss-container");
+let backBtn = document.getElementById("backBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+// scrollContainer.addEventListener("wheel", (evt) => {
+//   evt.preventDefault();
+//   scrollContainer.scrollLeft += evt.deltaY;
+// });
+
+nextBtn.addEventListener("click", () => {
+  scrollContainer.scrollLeft -= 500;
+});
+backBtn.addEventListener("click", () => {
+  scrollContainer.scrollLeft += 500;
 });
