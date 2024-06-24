@@ -14,7 +14,7 @@ gsap
     },
   })
   .to(".text-container .text-wrapper1", {
-    width: 540,
+    width: "30vw",
     duration: 1,
     ease: "none",
     stagger: 5,
@@ -36,7 +36,7 @@ gsap
     },
   })
   .to(".text-container .text-wrapper2", {
-    width: 620,
+    width: "39vw",
     duration: 1,
     ease: "none",
     stagger: 5,
@@ -57,7 +57,7 @@ gsap
     },
   })
   .to(".text-container .text-wrapper3", {
-    width: 470,
+    width: "25vw",
     duration: 1,
     ease: "none",
     stagger: 5,
@@ -78,7 +78,7 @@ gsap
     },
   })
   .to(".text-container .text-wrapper4", {
-    width: 615,
+    width: "34vw",
     duration: 1,
     ease: "none",
     stagger: 5,
@@ -99,7 +99,7 @@ gsap
     },
   })
   .to(".text-container .text-wrapper5", {
-    width: 670,
+    width: "35vw",
     duration: 1,
     ease: "none",
     stagger: 5,
@@ -120,7 +120,7 @@ gsap
     },
   })
   .to(".text-container .text-wrapper6", {
-    width: 490,
+    width: "27vw",
     duration: 1,
     ease: "none",
     stagger: 5,
@@ -176,40 +176,49 @@ gsap
     ease: "none",
     stagger: 2,
   });
+// count number
+let nums = document.querySelectorAll(".bundle-wrapper #count");
+let section = document.querySelector(".bundle-wrapper");
+let started = false;
 
-// number counting
-//scroll counting start
-window.addEventListener("scroll", scrollE);
-
-function scrollE() {
-  var counting_wrap = document.querySelector(".bundle-wrapper");
-  var currentScroll = window.scrollY;
-  var countingOffset = counting_wrap.offsetTop;
-  var viewportHeight = window.innerHeight;
-
-  if (currentScroll >= countingOffset + viewportHeight / 200) {
-    counting(0, 23, count);
+window.onscroll = function () {
+  if (window.scrollY >= section.offsetTop) {
+    if (!started) {
+      nums.forEach((num) => startCount(num));
+    }
+    started = true;
   }
+};
+
+function startCount(el) {
+  let goal = el.dataset.goal;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 1000 / goal);
 }
 
-//리팩토링
-function counting(num, counter, el) {
-  //선택자
-  var section04 = document.querySelector("#count");
+gsap.set(".bundle-wrapper .budle-container .budle-contents .bundle-contents2", {
+  width: "50%",
+});
 
-  //매개변수
-  var up = num;
-  var count = counter;
-
-  setInterval(function () {
-    //1) 0.01초에 한번씩 반복되는 함수인데
-    if (up < count) {
-      //2) up < count 충족할 때 까지 실행
-      up++; // > 한번 실행할 때마다 up이 1씩 올라감
-      el.textContent = up; // > el이라는 매개변수 선택자에 현재 up을 넣음
-    } // 한번 끝나면 0.01초 후에 또 실행
-  }, 10);
-}
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".bundle-wrapper",
+      scrub: 1,
+      start: "-=500",
+      end: "center bottom",
+    },
+  })
+  .to(".bundle-wrapper .budle-container .budle-contents .bundle-contents2", {
+    width: "auto",
+    duration: 0.2,
+    ease: "none",
+    transition: 0.2,
+  });
 
 // pick type
 $(".pick-wrapper .pick-dino .button1").on("click", (e) => {
@@ -249,8 +258,7 @@ gsap
   });
 
 gsap.set(".pick-wrapper .type-text", {
-  top: "80%",
-  opacity: 0,
+  top: "120%",
 });
 
 gsap
@@ -264,7 +272,6 @@ gsap
   })
   .to(".pick-wrapper .type-text", {
     top: "50%",
-    opacity: 1,
     duration: 1,
     ease: "none",
     stagger: 1,
@@ -291,6 +298,7 @@ gsap
     stagger: 1,
     transition: 0.3,
   });
+
 // weapon wrapper
 $(function () {
   let current = 0;
@@ -318,6 +326,7 @@ $(function () {
     simpleSlide(current + 1);
   });
 });
+
 $(function () {
   let current = 0;
   const $slideItems = $(".weapon-kok-img");
@@ -347,6 +356,28 @@ $(function () {
   });
 });
 
+gsap.set(".stone-trans", {
+  marginLeft: -1000,
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".weapon-item",
+      scrub: 1,
+      start: "-=500",
+      end: "cetner bottom",
+    },
+  })
+  .to(".stone-trans", {
+    marginLeft: 0,
+    duration: 1,
+    ease: "none",
+    stagger: 1,
+    transition: 0.3,
+  });
+
+// boss horizontal
 let scrollContainer = document.querySelector(".boss-wrapper .boss-container");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");

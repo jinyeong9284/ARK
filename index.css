@@ -215,7 +215,7 @@ nav ul li::before {
 .info-dino-wrapper {
   width: 100%;
   margin-top: 10vh;
-  background: url(./assets/images/line.png) 100% / cover;
+  background: url(./assets/images/line.png) 56% / cover;
   height: 120vh;
 }
 .info-dino-wrapper .dino-img {
@@ -278,13 +278,14 @@ nav ul li::before {
   top: 52%;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  overflow: hidden;
 }
 .count-wrapper {
   display: flex;
   justify-content: center;
 }
 .bundle-wrapper .budle-container .budle-contents .budle-contents1 .price {
-  font-size: 30px;
+  font-size: 1.8vw;
   font-family: var(--font-en);
   font-weight: 600;
   text-align: center;
@@ -295,7 +296,7 @@ nav ul li::before {
   margin: 80px auto 0;
 }
 .bundle-wrapper .budle-container .budle-contents .budle-contents1 .count {
-  font-size: 100px;
+  font-size: 5.5vw;
   font-family: var(--font-en);
   font-weight: 800;
   line-height: 1;
@@ -303,7 +304,7 @@ nav ul li::before {
   text-align: center;
 }
 .bundle-wrapper .budle-container .budle-contents .budle-contents1 .edition {
-  font-size: 20px;
+  font-size: 1.3vw;
   font-family: var(--font-en);
   font-weight: 600;
   text-align: center;
@@ -347,44 +348,48 @@ nav ul li::before {
   width: 20%;
 }
 .bundle-wrapper .budle-container .budle-contents .bundle-contents2 {
+  /* width: 700px; */
   background-color: #e1f41d;
   border-radius: 0 20px 20px 0;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10%;
 }
 .bundle-wrapper
   .budle-container
   .budle-contents
   .bundle-contents2
   p:first-child {
-  font-size: 60px;
+  font-size: 3.5vw;
   font-family: var(--font-en);
   font-weight: 800;
   text-align: center;
   margin: 0;
-  padding-top: 70px;
 }
 .bundle-wrapper .budle-container .budle-contents .bundle-contents2 img {
   position: relative;
-  left: 15%;
-  width: 68%;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 .bundle-wrapper
   .budle-container
   .budle-contents
   .bundle-contents2
   p:nth-of-type(2) {
-  font-size: 40px;
+  font-size: 2vw;
   font-family: var(--font-en);
   font-weight: 700;
   background-color: #000;
   color: #fff;
   width: 15vw;
   text-align: center;
-  height: 70px;
-  line-height: 70px;
+  height: 4vw;
+  line-height: 4vw;
   transform: skew(-20deg);
-  margin: 0;
+  margin: 10% auto 0;
   position: relative;
-  left: 27%;
 }
 /* pick wrapper */
 .pick-wrapper {
@@ -735,7 +740,9 @@ nav ul li::before {
   top: 50%;
   transition: 0.7s;
 }
-
+.weapon-con1 .rotate {
+  transform: rotate(-5deg);
+}
 .weapon-con1 img {
   transform: rotate(5deg);
 }
@@ -1226,4 +1233,53 @@ nav ul li::before {
   text-decoration: none;
   margin: 1.5% 5%;
   font-size: 18px;
+}
+@media screen and (max-width: 1800px) {
+  .info-wrapper .text-container .text-wrapper p {
+    font-size: 38px;
+  }
+  .ency-wrapper .dino-title {
+    font-size: 50px;
+  }
+  .ency-wrapper .dino-contents {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .info-wrapper .text-container .text-wrapper p {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .info-wrapper .text-container .text-wrapper p {
+    font-size: 30px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black p:first-child {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .info-wrapper .text-container .text-wrapper p {
+    font-size: 25px;
+  }
+  .info-wrapper img {
+    margin-left: 1vw;
+  }
+  .info-dino-wrapper p:first-of-type {
+    margin-top: 15vh;
+  }
+  .weapon-wrapper {
+    height: 150vh;
+  }
+  .weapon-con {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .weapon-item {
+    height: 150vh;
+  }
+  .weapon-kok-contents {
+    margin-top: 80vh;
+  }
 }
