@@ -14,6 +14,9 @@ p {
 }
 
 /* header */
+header .header-mobile {
+  display: none;
+}
 header {
   width: 100%;
   display: flex;
@@ -678,7 +681,7 @@ nav ul li::before {
   opacity: 0;
 }
 .weapon-kok-img.next .stone1 {
-  left: 150%;
+  left: 200%;
   top: 0%;
   transition: 0.7s;
 }
@@ -692,7 +695,7 @@ nav ul li::before {
   opacity: 0;
 }
 .weapon-kok-img.next .dogi1 {
-  left: 150%;
+  left: 200%;
   top: 100%;
   transition: 0.7s;
 }
@@ -707,7 +710,7 @@ nav ul li::before {
   opacity: 0;
 }
 .weapon-kok-img.next .nak1 {
-  left: 150%;
+  left: 200%;
   top: 0%;
   transition: 0.7s;
 }
@@ -722,7 +725,7 @@ nav ul li::before {
   opacity: 0;
 }
 .weapon-kok-img.next .ga1 {
-  left: 150%;
+  left: 200%;
   top: 100%;
   transition: 0.7s;
 }
@@ -736,7 +739,7 @@ nav ul li::before {
   opacity: 0;
 }
 .weapon-kok-img.next .ak1 {
-  left: 150%;
+  left: 200%;
   top: 50%;
   transition: 0.7s;
 }
@@ -1036,7 +1039,7 @@ nav ul li::before {
   position: relative;
 }
 .boss-wrapper .title {
-  font-size: 100px;
+  font-size: 120px;
   font-family: var(--font-en);
   font-weight: 800;
   text-align: center;
@@ -1200,7 +1203,7 @@ nav ul li::before {
   margin-top: 4%;
 }
 .review-wrapper .review-container .review-title {
-  font-size: 100px;
+  font-size: 120px;
   font-family: var(--font-en);
   font-weight: 800;
   padding-top: 10%;
@@ -1280,6 +1283,158 @@ nav ul li::before {
     height: 150vh;
   }
   .weapon-kok-contents {
-    margin-top: 80vh;
+    margin-top: 95vh;
+    margin-left: 10%;
+  }
+  .weapon-wrapper img {
+    left: 25%;
+  }
+  .weapon-kok-img.prev .stone {
+    left: 25%;
+  }
+  .weapon-wrapper .weapon-name {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .info-wrapper .text-container .text-wrapper p {
+    font-size: 20px;
+  }
+  .ency-wrapper .dino-title {
+    font-size: 40px;
+  }
+  .ency-wrapper .dino-contents {
+    font-size: 12px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black p:first-child {
+    font-size: 20px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black p:nth-of-type(2) {
+    font-size: 12px;
+  }
+  .review-wrapper .review-container .review1 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .info-wrapper .text-container {
+    padding: 0 5vw;
+  }
+  .info-wrapper .text-container .text-wrapper p {
+    font-size: 14px;
+  }
+  .ency-wrapper .title {
+    font-size: 80px;
+  }
+  .video-wrapper .video-container p {
+    font-size: 80px;
+  }
+  .boss-wrapper .title {
+    font-size: 80px;
+  }
+  .review-wrapper .review-container .review-title {
+    font-size: 80px;
+  }
+  .ency-wrapper .dino-title {
+    font-size: 30px;
+  }
+  .ency-wrapper .dino-contents {
+    font-size: 9px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black p:first-child {
+    font-size: 16px;
+  }
+  .review-wrapper .review-container .review1 {
+    font-size: 9px;
+  }
+  .bundle-wrapper {
+    height: 350vh;
+  }
+  .bundle-wrapper .budle-container .budle-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .bundle-wrapper .budle-container .budle-contents .bundle-contents2 {
+    border-radius: 0 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  header.click {
+    background-color: #fffff7;
+    height: 100vh;
+    transition: 0.7s;
+  }
+  header ul {
+    display: none;
+    transition: 0.7s;
+  }
+  header ul.click {
+    display: grid;
+    text-align: center;
+    height: 80%;
+    margin: auto;
+    transition: 0.7s;
+  }
+  header ul li a {
+    font-size: 2rem;
+  }
+  header ul li:first-child a {
+    display: inline;
+    background-color: inherit;
+    line-height: 0;
+  }
+  header .header-mobile {
+    width: 50px;
+    height: 50px;
+    background-color: #e1f41d;
+    border-radius: 50%;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    display: grid;
+    cursor: pointer;
+  }
+  header .header-mobile-menu {
+    width: 25px;
+    height: 25px;
+    background: url(./assets/images/icon-menu.svg) 50% / cover;
+    margin: auto;
+    transition: 0.7s;
+  }
+  header .header-mobile-menu.click {
+    background: url(./assets/images/icon-x.svg) 50% / cover;
+    transition: 0.7s;
+  }
+  .pick-wrapper .type-text {
+    font-size: 110px;
+  }
+  .info-dino-wrapper p:first-of-type {
+    margin-top: 20vh;
+  }
+  .info-wrapper .text-container {
+    padding: 0 1vw;
+  }
+  .info-dino-wrapper p:first-of-type {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .info-wrapper .text-wrapper {
+    height: 50px;
+    line-height: 50px;
+  }
+  .info-wrapper img {
+    width: 90%;
+  }
+  .info-dino-wrapper {
+    margin-top: 0;
+    height: 50vh;
+  }
+  .info-dino-wrapper p:first-of-type {
+    margin-top: 5vh;
   }
 }

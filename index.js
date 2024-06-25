@@ -126,7 +126,6 @@ gsap
     stagger: 5,
     backgroundColor: "#000",
   });
-
 // dino-img
 let image = document.getElementById("image");
 let images = [
@@ -199,27 +198,30 @@ function startCount(el) {
     }
   }, 1000 / goal);
 }
+if (innerWidth > 1300) {
+  gsap.set(
+    ".bundle-wrapper .budle-container .budle-contents .bundle-contents2",
+    {
+      width: "50%",
+    }
+  );
 
-gsap.set(".bundle-wrapper .budle-container .budle-contents .bundle-contents2", {
-  width: "50%",
-});
-
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".bundle-wrapper",
-      scrub: 1,
-      start: "-=500",
-      end: "center bottom",
-    },
-  })
-  .to(".bundle-wrapper .budle-container .budle-contents .bundle-contents2", {
-    width: "auto",
-    duration: 0.2,
-    ease: "none",
-    transition: 0.2,
-  });
-
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".bundle-wrapper",
+        scrub: 1,
+        start: "-=500",
+        end: "center bottom",
+      },
+    })
+    .to(".bundle-wrapper .budle-container .budle-contents .bundle-contents2", {
+      width: "auto",
+      duration: 0.2,
+      ease: "none",
+      transition: 0.2,
+    });
+}
 // pick type
 $(".pick-wrapper .pick-dino .button1").on("click", (e) => {
   $(".pick-wrapper .pick-dino .button1").toggleClass("toggle-btn");
@@ -392,4 +394,11 @@ nextBtn.addEventListener("click", () => {
 });
 backBtn.addEventListener("click", () => {
   scrollContainer.scrollLeft += 500;
+});
+
+// mobile-menu
+$(".header-mobile").on("click", (e) => {
+  $(".header-mobile-menu").toggleClass("click");
+  $("header ul").toggleClass("click");
+  $("header").toggleClass("click");
 });
