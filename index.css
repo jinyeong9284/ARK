@@ -11,6 +11,7 @@ body,
 p {
   margin: 0;
   padding: 0;
+  text-wrap: wrap;
 }
 
 /* header */
@@ -80,8 +81,9 @@ nav ul {
 nav ul li {
   font-family: var(--font-en);
   font-weight: 700;
-  font-size: 12px;
-  margin-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
   color: #000;
 }
 nav ul li::before {
@@ -93,7 +95,18 @@ nav ul li::before {
   margin-right: 10px;
   margin-bottom: 4px;
 }
-
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  /* background-color: #e1f41d;
+  padding: 5px;
+  height: 20px;
+  border-radius: 15px; */
+}
+nav ul li.active a {
+  /* text-decoration: underline; */
+  color: #e1f41d;
+}
 /* intro-wrapper */
 .intro-wrapper {
   width: 100%;
@@ -256,6 +269,8 @@ nav ul li::before {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
+  width: 60%;
+  margin: auto;
 }
 
 /* bundle */
@@ -274,7 +289,7 @@ nav ul li::before {
 }
 .bundle-wrapper .budle-container .budle-contents {
   background-color: #fff;
-  width: 90%;
+  width: 80%;
   height: 45%;
   position: absolute;
   border-radius: 20px;
@@ -311,44 +326,14 @@ nav ul li::before {
   font-family: var(--font-en);
   font-weight: 600;
   text-align: center;
-  padding-top: 300px;
+  padding-top: 0;
 }
 .bundle-wrapper .budle-container .budle-contents .budle-contents1 img {
-  width: 18%;
+  width: 40%;
   position: relative;
-}
-.bundle-wrapper
-  .budle-container
-  .budle-contents
-  .budle-contents1
-  img:nth-of-type(1) {
-  top: 30%;
-  left: 40%;
-}
-.bundle-wrapper
-  .budle-container
-  .budle-contents
-  .budle-contents1
-  img:nth-of-type(2) {
-  top: 10%;
-  left: 10%;
-}
-.bundle-wrapper
-  .budle-container
-  .budle-contents
-  .budle-contents1
-  img:nth-of-type(3) {
-  top: 10%;
-  left: 15%;
-}
-.bundle-wrapper
-  .budle-container
-  .budle-contents
-  .budle-contents1
-  img:nth-of-type(4) {
-  top: -10%;
-  left: -15%;
-  width: 20%;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
 }
 .bundle-wrapper .budle-container .budle-contents .bundle-contents2 {
   /* width: 700px; */
@@ -365,6 +350,7 @@ nav ul li::before {
   .bundle-contents2
   p:first-child {
   font-size: 3.5vw;
+  line-height: 1.1;
   font-family: var(--font-en);
   font-weight: 800;
   text-align: center;
@@ -391,7 +377,7 @@ nav ul li::before {
   height: 4vw;
   line-height: 4vw;
   transform: skew(-20deg);
-  margin: 10% auto 0;
+  margin: -10% auto 0;
   position: relative;
 }
 /* pick wrapper */
@@ -463,6 +449,7 @@ nav ul li::before {
   color: #fff;
   font-family: var(--font-ko);
   position: absolute;
+  line-height: 1.5;
   top: 20%;
   left: 10%;
   opacity: 0;
@@ -536,6 +523,18 @@ nav ul li::before {
   left: 70%;
   transition: 0.7s;
 }
+.pick-wrapper .pick-dino .button2.ad-btn {
+  display: none;
+}
+.pick-wrapper .pick-dino .dino2 .learn.ad-btn {
+  display: none;
+}
+.pick-wrapper .pick-dino .button1.ad-btn {
+  display: none;
+}
+.pick-wrapper .pick-dino .dino1 .learn.ad-btn {
+  display: none;
+}
 .pick-wrapper .pick-dino .button2.toggle-btn {
   background: url(./assets/images/button3.png) no-repeat 50% / contain;
 }
@@ -556,6 +555,8 @@ nav ul li::before {
   opacity: 0;
   transition: 0.7s;
   transform: translateY(30%);
+  line-height: 1.5;
+  width: 80%;
 }
 .pick-wrapper .pick-dino .doye-text.toggle-btn {
   opacity: 1;
@@ -631,6 +632,7 @@ nav ul li::before {
   margin-top: 7%;
   font-weight: 700;
   width: 700px;
+  line-height: 1.5;
 }
 .weapon-wrapper .weapon-kok-contents .contents2 {
   color: #fff;
@@ -638,7 +640,8 @@ nav ul li::before {
   font-family: var(--font-ko);
   margin-top: 7%;
   font-weight: 700;
-  width: 700px;
+  width: 500px;
+  line-height: 1.5;
 }
 .weapon-kok-contents {
   opacity: 0;
@@ -1213,9 +1216,8 @@ nav ul li::before {
   display: flex;
   font-family: var(--font-ko);
   font-size: 18px;
-  text-decoration: underline;
   margin-top: 3.5%;
-  line-height: 1.5;
+  line-height: 1.7;
   justify-content: space-between;
 }
 .review-wrapper .review-container .review1 img {
@@ -1232,10 +1234,19 @@ nav ul li::before {
 .review-wrapper a {
   display: block;
   font-family: var(--font-ko);
-  color: #fff;
+  font-weight: 700;
+  color: #ffffff;
   text-decoration: none;
-  margin: 1.5% 5%;
   font-size: 18px;
+  position: relative;
+  text-align: center;
+  margin: 2% 0;
+}
+.review-wrapper a:hover {
+  color: #000000;
+}
+.review1 p {
+  width: 80%;
 }
 @media screen and (max-width: 1800px) {
   .info-wrapper .text-container .text-wrapper p {
@@ -1279,6 +1290,9 @@ nav ul li::before {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  .icon {
+    display: none;
+  }
   .weapon-item {
     height: 150vh;
   }
@@ -1313,7 +1327,7 @@ nav ul li::before {
     font-size: 12px;
   }
   .review-wrapper .review-container .review1 {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -1339,13 +1353,13 @@ nav ul li::before {
     font-size: 30px;
   }
   .ency-wrapper .dino-contents {
-    font-size: 9px;
+    font-size: 16px;
   }
   .boss-wrapper .boss-container .boss1 .bg-black p:first-child {
     font-size: 16px;
   }
   .review-wrapper .review-container .review1 {
-    font-size: 9px;
+    font-size: 14px;
   }
   .bundle-wrapper {
     height: 350vh;
@@ -1360,6 +1374,9 @@ nav ul li::before {
   }
 }
 @media screen and (max-width: 900px) {
+  .intro-wrapper {
+    height: 100vh;
+  }
   nav ul {
     display: none;
   }
@@ -1373,14 +1390,19 @@ nav ul li::before {
     transition: 0.7s;
   }
   header ul.click {
+    width: 100%;
+    position: absolute;
     display: grid;
     text-align: center;
-    height: 80%;
-    margin: auto;
+    height: 60%;
     transition: 0.7s;
+    place-items: center;
+    margin: 150px 0;
   }
+
   header ul li a {
     font-size: 2rem;
+    margin-right: 0;
   }
   header ul li:first-child a {
     display: inline;
@@ -1421,20 +1443,456 @@ nav ul li::before {
   .info-dino-wrapper p:first-of-type {
     font-size: 50px;
   }
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 .edition {
+    font-size: 14px;
+  }
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 .count {
+    font-size: 3.5rem;
+  }
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 .price {
+    font-size: 14px;
+    width: 100px;
+  }
+  .bundle-wrapper
+    .budle-container
+    .budle-contents
+    .bundle-contents2
+    p:first-child {
+    font-size: 3rem;
+  }
+  .bundle-wrapper
+    .budle-container
+    .budle-contents
+    .bundle-contents2
+    p:nth-of-type(2) {
+    font-size: 1rem;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+  }
+  .ency-wrapper .title {
+    font-size: 50px;
+  }
+  .ency-wrapper .dino1 {
+    width: 95%;
+    height: 50vw;
+    clip-path: none;
+    border-radius: 20px;
+    margin: 7% auto 5%;
+    background: url(./assets/images/rex.png) no-repeat 50% / cover;
+  }
+  .ency-wrapper .dino-flex {
+    display: block;
+  }
+  .ency-wrapper .dino1 img {
+    display: none;
+  }
+  .ency-wrapper .dino2 {
+    width: 95%;
+    height: 50vw;
+    clip-path: none;
+    border-radius: 20px;
+    margin: 0 auto 5%;
+    background: url(./assets/images/tri.png) no-repeat 50% / cover;
+  }
+  .ency-wrapper .dino2 img {
+    display: none;
+  }
+  .ency-wrapper .dino3 {
+    width: 95%;
+    height: 50vw;
+    clip-path: none;
+    border-radius: 20px;
+    margin-top: 0;
+    margin: auto;
+    background: url(./assets/images/dire.png) no-repeat 50% / cover;
+    margin: 0 auto 5%;
+  }
+  .ency-wrapper .dino3 img {
+    display: none;
+  }
+  .ency-wrapper .dino4 {
+    width: 95%;
+    height: 50vw;
+    clip-path: none;
+    border-radius: 20px;
+    margin-top: 0;
+    margin: auto;
+    background: url(./assets/images/spino.png) no-repeat 50% / cover;
+  }
+  .ency-wrapper .dino4 img {
+    display: none;
+  }
+  .ency-wrapper .dino-title {
+    opacity: 1;
+  }
+  .ency-wrapper .dino-contents {
+    opacity: 1;
+  }
+  .ency-wrapper .dino1 .dino-title {
+    padding: 26% 5% 2%;
+  }
+  .ency-wrapper .dino1 .dino-contents {
+    padding: 0.5% 5%;
+  }
+  .ency-wrapper .dino2 .dino-title {
+    padding: 30% 5% 2%;
+  }
+  .ency-wrapper .dino2 .dino-contents {
+    padding: 2% 5%;
+  }
+  .ency-wrapper .dino3 .dino-title {
+    padding: 30% 5% 2%;
+  }
+  .ency-wrapper .dino3 .dino-contents {
+    padding: 2% 5%;
+  }
+  .ency-wrapper .dino4 .dino-title {
+    padding: 27% 5% 2%;
+  }
+  .ency-wrapper .dino4 .dino-contents {
+    padding: 1.5% 5%;
+  }
+  .boss-wrapper .title {
+    font-size: 50px;
+  }
+  .video-wrapper .video-container p {
+    font-size: 50px;
+  }
+  .video-wrapper .video-container iframe {
+    width: 100%;
+  }
+  .review-wrapper .review-container .review-title {
+    font-size: 50px;
+  }
+  .info-dino-wrapper p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .pick-wrapper .pick-dino .theri-text p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .pick-wrapper .pick-dino .doye-text p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black p:first-child {
+    font-size: 16px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .review-wrapper .review-container .line {
+    width: 70%;
+  }
+  .review-wrapper .review-container .review1 {
+    width: 60%;
+  }
+  .review-wrapper a {
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 780px) {
+  .intro-wrapper {
+    height: 80vh;
+  }
+  .info-wrapper .text-container {
+    margin-top: 5vh;
+  }
   .info-wrapper .text-wrapper {
     height: 50px;
     line-height: 50px;
+  }
+  .info-dino-wrapper p:first-of-type {
+    font-size: 30px;
   }
   .info-wrapper img {
     width: 90%;
   }
   .info-dino-wrapper {
     margin-top: 0;
-    height: 50vh;
+    height: 70vh;
   }
   .info-dino-wrapper p:first-of-type {
-    margin-top: 5vh;
+    margin-top: 10vh;
+  }
+  .pick-wrapper {
+    height: 200vh;
+  }
+  .pick-wrapper .pick-dino {
+    display: block;
+  }
+  .pick-wrapper .pick-dino .dino1 {
+    width: 100%;
+    height: 100vh;
+  }
+  .pick-wrapper .pick-dino .dino2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+  }
+  .pick-wrapper .pick-dino .theri-text {
+    opacity: 1;
+    top: 2%;
+  }
+  .pick-wrapper .pick-dino .dino1 .learn {
+    display: none;
+  }
+  .pick-wrapper .pick-dino .dino2 .learn {
+    display: none;
+  }
+  .pick-wrapper .pick-dino .button1 {
+    display: none;
+  }
+  .pick-wrapper .pick-dino .button2 {
+    display: none;
+  }
+  .pick-wrapper .type-text {
+    display: none;
+  }
+  .pick-wrapper .pick-dino .doye-text {
+    opacity: 1;
+    top: 2%;
+    left: 10%;
+  }
+  .info-wrapper img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .info-wrapper .text-container .text-wrapper1 {
+    width: 250px;
+  }
+  .info-wrapper .text-container .text-wrapper2 {
+    width: 300px;
+  }
+  .info-wrapper .text-container .text-wrapper3 {
+    width: 200px;
+  }
+  .info-wrapper .text-container .text-wrapper4 {
+    width: 250px;
+  }
+  .info-wrapper .text-container .text-wrapper5 {
+    width: 270px;
+  }
+  .info-wrapper .text-container .text-wrapper6 {
+    width: 200px;
+  }
+  .bundle-wrapper .budle-container .budle-contents {
+    height: 40%;
+  }
+  .review-wrapper .review-container .line {
+    width: 80%;
+  }
+  .review-wrapper .review-container .review1 {
+    width: 80%;
+  }
+  .pick-wrapper .pick-dino .dino1 {
+    height: 70vh;
+  }
+  .pick-wrapper .pick-dino .dino2 {
+    height: 70vh;
+  }
+  .pick-wrapper {
+    height: 140vh;
+  }
+  .bundle-wrapper {
+    margin-top: 0;
+  }
+  .weapon-wrapper {
+    height: 110vh;
+  }
+  .weapon-item {
+    height: 110vh;
+  }
+  .weapon-con {
+    height: 70vh;
+  }
+  .weapon-wrapper img {
+    width: 250px;
+    left: 31%;
+  }
+  .weapon-kok-img.prev .stone {
+    left: 31%;
+  }
+  .weapon-item .button {
+    height: 75vh;
+  }
+  .weapon-kok-contents {
+    margin-top: 60vh;
+    margin-left: 25%;
+  }
+  .weapon-wrapper .weapon-name {
+    font-size: 50px;
+    color: #fff;
+    font-family: var(--font-ko);
+    font-weight: 800;
+    display: flex;
+    margin-top: 0;
+  }
+  .weapon-wrapper .weapon-name p:nth-of-type(2) {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    font-size: 20px;
+    color: #000;
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+    background-color: #e1f41d;
+    padding-left: 15px;
+    margin-top: 14px;
+    margin-left: 3%;
+  }
+  .weapon-wrapper .weapon-kok-contents .contents1 {
+    font-size: 16px;
+  }
+  .weapon-wrapper .weapon-kok-contents .contents2 {
+    font-size: 16px;
+  }
+  .video-wrapper {
+    margin-top: -1px;
+  }
+  .ency-wrapper {
+    margin-top: -1px;
+  }
+  .info-dino-wrapper p:first-of-type {
+    margin-top: 15vh;
+  }
+  .ency-wrapper .dino-contents {
+    opacity: 0;
+  }
+  .ency-wrapper .dino1 .dino-title {
+    padding: 30% 5% 2%;
+  }
+  .ency-wrapper .dino4 .dino-title {
+    padding: 30% 5% 2%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .info-wrapper img {
+    display: none;
+  }
+  .info-wrapper .text-container {
+    margin-left: 10vw;
+  }
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 .edition {
+    padding-top: 100px;
+  }
+  .ency-wrapper .title {
+    font-size: 40px;
+  }
+  .boss-wrapper .title {
+    font-size: 40px;
+  }
+  .video-wrapper .video-container p {
+    font-size: 40px;
+  }
+  .review-wrapper .review-container .review-title {
+    font-size: 40px;
+  }
+  .boss-wrapper {
+    margin-top: -1px;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-white {
+    width: 70vw;
+    height: 70vw;
+  }
+  .boss-wrapper .boss-container .boss1 .bg-black {
+    width: 70vw;
+    height: 40vw;
+  }
+  .boss-wrapper .boss-container {
+    gap: 46vw;
+  }
+  .boss-wrapper .boss-container .boss1 .boss-button {
+    width: 10vw;
+    height: 10vw;
+  }
+  .boss-wrapper .button {
+    margin-top: 50%;
+  }
+  .review-wrapper {
+    margin-top: -1px;
+  }
+  .pick-wrapper .pick-dino .theri {
+    top: 70%;
+  }
+  .pick-wrapper .pick-dino .pte {
+    top: 70%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .weapon-kok-contents {
+    margin-left: 28%;
+  }
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 img {
+    margin-top: -10px;
+  }
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 .edition {
+    padding-top: 20%;
+  }
+  header .header-mobile {
+    top: 30px;
+    right: 20px;
+  }
+  header h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .boss-wrapper .boss-container {
+    gap: 57vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .info-dino-wrapper {
+    height: 90vh;
+  }
+  .pick-wrapper .pick-dino .dino1 {
+    height: 100vh;
+  }
+  .pick-wrapper .pick-dino .dino2 {
+    height: 100vh;
+  }
+  .pick-wrapper {
+    height: 200vh;
+  }
+  .weapon-wrapper {
+    height: 150vh;
+  }
+  .weapon-item {
+    height: 150vh;
+  }
+  .weapon-kok-contents {
+    margin-top: 80vh;
+  }
+  .boss-wrapper .boss-container {
+    gap: 63vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .bundle-wrapper .budle-container .budle-contents .budle-contents1 img {
+    width: 50%;
+  }
+  .info-dino-wrapper {
+    height: 80vh;
+  }
+  .pick-wrapper .pick-dino .dino1 {
+    height: 80vh;
+  }
+  .pick-wrapper .pick-dino .dino2 {
+    height: 80vh;
+  }
+  .pick-wrapper {
+    height: 160vh;
+  }
+  .weapon-wrapper .weapon-kok-contents {
+    margin-top: 70vh;
+  }
+  .weapon-wrapper {
+    height: 130vh;
+  }
+  .weapon-item {
+    height: 130vh;
+  }
+  .boss-wrapper .boss-container {
+    gap: 68vw;
   }
 }

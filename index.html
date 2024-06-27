@@ -7,7 +7,24 @@
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
     />
-
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon.png"
+    />
     <!-- font -->
     <link rel="stylesheet" href="./assets/styles/NeueHaasDisplay.css" />
 
@@ -36,20 +53,20 @@
       </div>
     </header>
     <nav>
-      <ul>
-        <li>INTRO</li>
-        <li>INFO</li>
-        <li>BUNDLE</li>
-        <li>PICK</li>
-        <li>weapon</li>
-        <li>Encyclopedia</li>
-        <li>BOSS</li>
-        <li>RIVIEW</li>
+      <ul id="navList">
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#bundle">BUNDLE</a></li>
+        <li><a href="#pick">PICK</a></li>
+        <li><a href="#weapon">weapon</a></li>
+        <li><a href="#encyclopedia">Encyclopedia</a></li>
+        <li><a href="#boss">BOSS</a></li>
+        <li><a href="#riview">RIVIEW</a></li>
       </ul>
     </nav>
 
     <!-- intro-wrapper -->
-    <section class="intro-wrapper">
+    <section class="intro-wrapper" id="intro">
       <img src="./assets/images/arklogo.png" alt="arklogo" class="logo" />
       <img
         src="./assets/images/cloud.png"
@@ -91,7 +108,7 @@
     </section>
 
     <!-- info-dodo -->
-    <section class="info-wrapper">
+    <section class="info-wrapper" id="info">
       <div class="text-container">
         <div class="text-wrapper text-wrapper1">
           <p>ARK라는 신비로운 섬 해안에서</p>
@@ -118,21 +135,20 @@
     </section>
 
     <!-- info-dino -->
-    <section class="info-dino-wrapper">
+    <section class="info-dino-wrapper" id="info">
       <div class="dino-img">
         <img src="" alt="dino" id="image" />
       </div>
       <p>ARK</p>
       <p>
-        자원을 사용하여 땅을 돌아다니는<br />
-        리바이어던 공룡과 기타 원시 생물을 죽이거나<br />
-        길들이고 번식시키고, 수백 명의 다른 플레이어와<br />
-        팀을 이루거나 먹이로 삼아 생존하고, 지배하고, 탈출하세요!
+        자원을 사용하여 땅을 돌아다니는 리바이어던 공룡과 기타 원시 생물을
+        죽이거나 길들이고 번식시키고, 수백 명의 다른 플레이어와 팀을 이루거나
+        먹이로 삼아 생존하고, 지배하고, 탈출하세요!
       </p>
     </section>
 
     <!-- bundle -->
-    <section class="bundle-wrapper">
+    <section class="bundle-wrapper" id="bundle">
       <div class="budle-container">
         <div class="budle-contents">
           <div class="budle-contents1">
@@ -141,10 +157,7 @@
               <p class="count" id="count" data-goal="23">0</p>
               <span class="count">%</span>
             </div>
-            <img src="./assets/images/Cosmetic_HLNA.png" alt="ark1" />
-            <img src="./assets/images/Cosmetic_Noglin.png" alt="ark2" />
-            <img src="./assets/images/Cosmetic_Shadowmane_5.png" alt="ark3" />
-            <img src="./assets/images/Logo_GenesisPart1.png" alt="ark4" />
+            <img src="./assets/images/bundle1.png" alt="ark4" />
             <p class="edition">
               Buy ARK: Ultimate Survivor Edition <br />
               BUNDLE
@@ -163,7 +176,7 @@
     </section>
 
     <!-- pick -->
-    <section class="pick-wrapper" id="button">
+    <section class="pick-wrapper" id="pick">
       <p class="type-text">PICK YOUR <br />TYPE</p>
       <div class="pick-dino">
         <div class="dino1">
@@ -192,11 +205,10 @@
             <p>도에디쿠루스</p>
             <p>
               산지나 숲 지역에 주로 서식하지만 그 외의 지형에서도 종종
-              보이는,<br />설원을 제외한 맵 전체에 걸쳐 서식하는 생물이다.
-              <br />스코치드 어스에서는 아예 맵 전역에 돌마냥 널려있는
-              수준으로<br />
-              많으며 에버레이션과 익스팅션에서는 초반 활동지역인 그린존과
-              성역에서 흔히 보인다.
+              보이는,설원을 제외한 맵 전체에 걸쳐 서식하는 생물이다. 스코치드
+              어스에서는 아예 맵 전역에 돌마냥 널려있는 수준으로 많으며
+              에버레이션과 익스팅션에서는 초반 활동지역인 그린존과 성역에서 흔히
+              보인다.
             </p>
           </div>
         </div>
@@ -204,7 +216,7 @@
     </section>
 
     <!-- weapon wrapper -->
-    <section class="weapon-item">
+    <section class="weapon-item" id="weapon">
       <div class="button">
         <div class="next-button">
           <img src="./assets/images/arrow.png" alt="arrow" />
@@ -233,13 +245,21 @@
               alt="stone"
               class="stone-trans"
             />
-            <img src="./assets/images/icon1.png" alt="icon1" class="icon1" />
+            <img
+              src="./assets/images/icon1.png"
+              alt="icon1"
+              class="icon1 icon"
+            />
             <img
               src="./assets/images/ark-stone.png"
               alt="stone"
               class="stone stone-trans"
             />
-            <img src="./assets/images/icon2.png" alt="icon2" class="icon2" />
+            <img
+              src="./assets/images/icon2.png"
+              alt="icon2"
+              class="icon2 icon"
+            />
           </div>
           <div class="weapon-kok-contents active">
             <div class="weapon-name">
@@ -248,29 +268,34 @@
             </div>
             <p class="contents1">
               기본 제공되는 엔그램이기에 사실상 아크를 하는<br />
-              모든 사람들이 처음 만들게 되는 아이템. 어찌 보면 아크의 시작이라
-              할 수 있다.<br />
-              돌 도끼에 비해서 생고기와 부싯돌, 철과 짚을 더 많이 캘 수 있다.
+              모든 사람들이 처음 만들게 되는 아이템.<br />
+              어찌 보면 아크의 시작이라 할 수 있다.<br />
+              돌 도끼에 비해서 생고기와 부싯돌,<br />
+              철과 짚을 더 많이 캘 수 있다.
             </p>
             <p class="contents2">
-              대미지는 16으로, 아무것도 없고 타격 시 자신도 대미지를 입는<br />
-              맨손보다는 낫기에 1레벨 상태로 아무 것도 없을 때 도도나
-              리스트로사우루스<br />
-              같은 생물들을 잡을 때 쓸 수 있다.
+              대미지는 16으로, 아무것도 없고 타격 시<br />
+              자신도 대미지를 입는 맨손보다는 낫기에 <br />1레벨 상태로 아무
+              것도 없을 때 도도나<br />
+              리스트로사우루스 같은 생물들을 잡을 때 쓸 수 있다.
             </p>
           </div>
         </div>
         <div class="weapon-kok weapon-con weapon-con2">
           <div class="weapon-kok-img">
             <img src="./assets/images/nak.png" alt="stone" />
-            <img src="./assets/images/yak.png" alt="yak" class="icon3" />
+            <img src="./assets/images/yak.png" alt="yak" class="icon3 icon" />
             <img src="./assets/images/ark-dogi.png" alt="stone" class="dogi" />
             <img
               src="./assets/images/ark-stone.png"
               alt="stone"
               class="stone1"
             />
-            <img src="./assets/images/icon1.png" alt="icon1" class="icon1" />
+            <img
+              src="./assets/images/icon1.png"
+              alt="icon1"
+              class="icon1 icon"
+            />
           </div>
           <div class="weapon-kok-contents">
             <div class="weapon-name">
@@ -279,26 +304,31 @@
             </div>
             <p class="contents1">
               2레벨에 해금할 수 있는 기본적인 도구로,<br />
-              돌 곡괭이와 도끼가 있는 순간부터 본격적인 자원 파밍의 시작이 되는
-              시점이라 볼 수 있다.<br />
-              때문에 유저들 사이에서 게임 극초반 단계를 칭하는 말로 돌도끼라는
-              표현을 쓰기도 한다.
+              돌 곡괭이와 도끼가 있는 순간부터 본격적인 자원<br />
+              파밍의 시작이 되는 시점이라 볼 수 있다.<br />
+              때문에 유저들 사이에서 게임 극초반 단계를 칭하는<br />
+              말로 돌도끼라는 표현을 쓰기도 한다.
             </p>
             <p class="contents2">
-              번역명은 그냥 돌 도끼라고 해놓았지만 실제 원문과 모델링상으로는<br />
-              흔히 생각하는 무기로서의 도끼보다는 손도끼(Hatchet)이다.<br />
-              돌 곡괭이에 비해서 가죽과 돌, 목재를 더 많이 캘 수 있어<br />
-              초반 가죽 및 목재 파밍으로도 꼭 필요한 도구이다.
+              번역명은 그냥 돌 도끼라고 해놓았지만 실제 원문과<br />
+              모델링상으로는 흔히 생각하는 무기로서의 도끼보다는<br />
+              손도끼(Hatchet)이다. 돌 곡괭이에 비해서<br />
+              가죽과 돌, 목재를 더 많이 캘 수 있어 초반 가죽 및 목재<br />
+              파밍으로도 꼭 필요한 도구이다.
             </p>
           </div>
         </div>
         <div class="weapon-kok weapon-con weapon-con3">
           <div class="weapon-kok-img">
             <img src="./assets/images/ga.png" alt="stone" />
-            <img src="./assets/images/icon4.png" alt="icon4" class="icon4" />
+            <img
+              src="./assets/images/icon4.png"
+              alt="icon4"
+              class="icon4 icon"
+            />
             <img src="./assets/images/nak.png" alt="stone" class="nak" />
             <img src="./assets/images/dogi.png" alt="stone" class="dogi1" />
-            <img src="./assets/images/yak.png" alt="yak" class="icon3" />
+            <img src="./assets/images/yak.png" alt="yak" class="icon3 icon" />
           </div>
           <div class="weapon-kok-contents">
             <div class="weapon-name">
@@ -306,10 +336,9 @@
               <p>낚싯대</p>
             </div>
             <p class="contents1">
-              수액, 거머리 혈액, 거대 벌꿀을 미끼로 장착해 물고기를 낚는
-              낚싯대.<br />
-              물고기가 걸리면 미니게임이 시작되며, 미니게임을 성공적으로
-              클리어할<br />
+              수액, 거머리 혈액, 거대 벌꿀을 미끼로 장착해 물고기를<br />
+              낚는 낚싯대. 물고기가 걸리면 미니게임이 시작되며,<br />
+              미니게임을 성공적으로 클리어할<br />
               경우 물고기 크기에 따른 보상과 생선살을 준다.
             </p>
           </div>
@@ -317,10 +346,14 @@
         <div class="weapon-kok weapon-con weapon-con4">
           <div class="weapon-kok-img">
             <img src="./assets/images/ak.png" alt="stone" />
-            <img src="./assets/images/go.png" alt="gogi" class="icon5" />
+            <img src="./assets/images/go.png" alt="gogi" class="icon5 icon" />
             <img src="./assets/images/ga.png" alt="stone" class="ga" />
             <img src="./assets/images/nak.png" alt="stone" class="nak1" />
-            <img src="./assets/images/icon4.png" alt="icon4" class="icon4" />
+            <img
+              src="./assets/images/icon4.png"
+              alt="icon4"
+              class="icon4 icon"
+            />
           </div>
           <div class="weapon-kok-contents">
             <div class="weapon-name">
@@ -329,27 +362,26 @@
             </div>
             <p class="contents1">
               수통 계열 중 가장 먼저 열리는 아이템으로,<br />
-              다른 수통류 아이템들과 마찬가지로 인벤토리나 단축바에 가죽 물통을
-              올려놓고<br />
-              E키를 누르거나 단축바의 숫자키를 누르면 물통에 1회분의 물이 차게
-              된다.
+              다른 수통류 아이템들과 마찬가지로 인벤토리나 단축바에<br />
+              가죽 물통을 올려놓고 E키를 누르거나 단축바의<br />
+              숫자키를 누르면 물통에 1회분의 물이 차게 된다.
             </p>
             <p class="contents2">
               다만 툴팁에서도 보이듯 다른 수통 종류의 아이템들과<br />
-              다르게 물가에서 벗어나면 천천히 물이 빠져나간다는 단점이 존재해
-              요리 냄비에서 요리를<br />
-              할 때 임시로 쓰는 용도가 아니라면 다른 물통들처럼 들고다니면서
-              물을 마시기에는 부적합하다.
+              다르게 물가에서 벗어나면 천천히 물이 빠져나간다는<br />
+              단점이 존재해 요리 냄비에서 요리를 할 때<br />
+              임시로 쓰는 용도가 아니라면 다른 물통들처럼<br />
+              들고다니면서 물을 마시기에는 부적합하다.
             </p>
           </div>
         </div>
         <div class="weapon-kok weapon-con weapon-con5">
           <div class="weapon-kok-img">
             <img src="./assets/images/water.png" alt="stone" />
-            <img src="./assets/images/cry.png" alt="icon6" class="icon6" />
+            <img src="./assets/images/cry.png" alt="icon6" class="icon6 icon" />
             <img src="./assets/images/ak.png" alt="stone" class="ak" />
             <img src="./assets/images/nak.png" alt="stone" class="ga1" />
-            <img src="./assets/images/go.png" alt="gogi" class="icon5" />
+            <img src="./assets/images/go.png" alt="gogi" class="icon5 icon" />
           </div>
           <div class="weapon-kok-contents">
             <div class="weapon-name">
@@ -357,15 +389,15 @@
               <p>혈액 주사기</p>
             </div>
             <p class="contents1">
-              혈액을 추출하는 주사기로, 인벤토리에서 혈액 추출 주사기에 E키를
-              눌러 사용할 수 있다. <br />사용 시 자신의 체력이 25가 깎이는
-              동시에 혈액 주머니(Blood Pack)를 얻는다. <br />사용 시 5초간의
-              쿨타임이 존재해 연속으로 쓸 수는 없다.
+              혈액을 추출하는 주사기로, 인벤토리에서 혈액 추출<br />
+              주사기에 E키를 눌러 사용할 수 있다. <br />사용 시 자신의 체력이
+              25가 깎이는 동시에 <br />혈액 주머니(Blood Pack)를 얻는다.<br />사용
+              시 5초간의 쿨타임이 존재해 연속으로 쓸 수는 없다.
             </p>
             <p class="contents2">
-              혈액 주머니는 부패하는 소모품으로, 총 100개까지 겹치는 것이
-              가능하다.<br />30분의 부패 시간을 가지고 있으며, <br />저장고,
-              냉장고 등에 넣어 유통기한을 늘일 수 있다.<br />
+              혈액 주머니는 부패하는 소모품으로,<br />
+              총 100개까지 겹치는 것이 가능하다.<br />30분의 부패 시간을 가지고
+              있으며, <br />저장고, 냉장고 등에 넣어 유통기한을 늘일 수 있다.<br />
               개당 0.05의 무게를 가지고 있다.
             </p>
           </div>
@@ -373,10 +405,14 @@
         <div class="weapon-kok weapon-con weapon-con6">
           <div class="weapon-kok-img">
             <img src="./assets/images/ark-stone.png" alt="stone" />
-            <img src="./assets/images/icon2.png" alt="icon2" class="icon2" />
+            <img
+              src="./assets/images/icon2.png"
+              alt="icon2"
+              class="icon2 icon"
+            />
             <img src="./assets/images/water.png" alt="stone" class="water" />
             <img src="./assets/images/ak.png" alt="stone" class="ak1" />
-            <img src="./assets/images/cry.png" alt="icon6" class="icon6" />
+            <img src="./assets/images/cry.png" alt="icon6" class="icon6 icon" />
           </div>
           <div class="weapon-kok-contents">
             <div class="weapon-name">
@@ -384,10 +420,12 @@
               <p>물병</p>
             </div>
             <p class="contents1">
-              일반적인 유리 병으로, 위의 가죽 물통의 상위호환격 아이템이다.<br />
-              물을 채울 시 2회분의 물(200)이 담겨지며, 따라서 총 두 번을 섭취
-              가능하다.,<br />단, 요리 냄비나 공업용 밥솥에 넣어서 사용 시 1회만
-              사용 가능하다.
+              일반적인 유리 병으로, 위의 가죽 물통의<br />
+              상위호환격 아이템이다.<br />
+              물을 채울 시 2회분의 물(200)이 담겨지며,<br />
+              따라서 총 두 번을 섭취 가능하다.,<br />단, 요리 냄비나 공업용
+              밥솥에 넣어서<br />
+              사용 시 1회만 사용 가능하다.
             </p>
           </div>
         </div>
@@ -410,7 +448,7 @@
     </section>
 
     <!-- ENCYCLOPEDIA -->
-    <section class="ency-wrapper">
+    <section class="ency-wrapper" id="encyclopedia">
       <img src="./assets/images/arklogo.png" alt="logo" />
       <p class="title">ENCYCLOPEDIA</p>
       <div class="dino1">
@@ -418,9 +456,8 @@
         <p class="dino-title">Rex</p>
         <p class="dino-contents">
           게임 ARK: Survival Evolved에 등장하는 공룡으로, 모티브는
-          당연히 티라노사우루스다.<br />
-          그러나 게임 내 설정상 등장하는 생물 대부분이 그렇듯 학명은
-          티라노사우루스 도미눔(Tyrannosaurus dominum)으로,<br />
+          당연히 티라노사우루스다. 그러나 게임 내 설정상 등장하는 생물 대부분이
+          그렇듯 학명은 티라노사우루스 도미눔(Tyrannosaurus dominum)으로,
           실제 티라노사우루스(T. rex)와 다른 종이며, 실제로도 게임상에서
           보여지는 특징들은 현실의 티라노사우루스와 거리가 있는 편이다.
         </p>
@@ -430,9 +467,9 @@
           <img src="./assets/images/dino2-wrapper.png" alt="wrapper" />
           <p class="dino-title">Triceratops</p>
           <p class="dino-contents">
-            스코치드 어스를 뺀 모든 맵에 등장하는 흔히 보이는 중형
-            <br />초식공룡으로, 보통 생존자가 파라사우롤로푸스와 함께<br />
-            가장 먼저 마주치게 될 중형 초식 생물이다.
+            스코치드 어스를 뺀 모든 맵에 등장하는 흔히 보이는 중형 초식공룡으로,
+            보통 생존자가 파라사우롤로푸스와 함께 가장 먼저 마주치게 될 중형
+            초식 생물이다.
           </p>
         </div>
         <div class="dino3">
@@ -450,16 +487,16 @@
         <p class="dino-title">Spino</p>
         <p class="dino-contents">
           주로 강이나 늪지 등 물가와 인접한 장소에서 볼 수 있는 대형 육식공룡.
-          원종과 아종을 모두 포함하면 사막 컨셉의 맵인<br />
-          스코치드 어스를 제외하고 모두 개근한 몇 안되는 공룡 중 하나다.
-          스피노사우루스(Spinosaurus)라는 명칭이 길기 때문인지<br />
-          인게임에서는 공물 명칭을 제외하면 스피노(Spino)로 줄여서 표기된다.
+          원종과 아종을 모두 포함하면 사막 컨셉의 맵인 스코치드 어스를 제외하고
+          모두 개근한 몇 안되는 공룡 중 하나다. 스피노사우루스(Spinosaurus)라는
+          명칭이 길기 때문인지 인게임에서는 공물 명칭을 제외하면 스피노(Spino)로
+          줄여서 표기된다.
         </p>
       </div>
     </section>
 
     <!-- boss -->
-    <section class="boss-wrapper">
+    <section class="boss-wrapper" id="boss">
       <p class="title">BOSS</p>
       <div class="button">
         <div id="nextBtn">
@@ -540,7 +577,7 @@
     </section>
 
     <!-- review wrapper -->
-    <section class="review-wrapper">
+    <section class="review-wrapper" id="riview">
       <div class="review-text">
         <img src="./assets/images/footer-img.png" alt="review-img" />
         <p>
@@ -554,10 +591,9 @@
         <div class="review1 mar">
           <p>
             내 게임 인생에서 가장 좋은 시기와 가장 나쁜 시기 중 일부를 이 게임에
-            보냈습니다.<br />
-            미래가 어떤 모습일지는 잘 모르겠지만 여러 계정/플랫폼에서 거의
-            20,000시간을<br />
-            보낸 것은 정말 즐거웠고 평생 친구를 사귀게 되어 기쁩니다. 건배.
+            보냈습니다. 미래가 어떤 모습일지는 잘 모르겠지만 여러
+            계정/플랫폼에서 거의 20,000시간을 보낸 것은 정말 즐거웠고 평생
+            친구를 사귀게 되어 기쁩니다.
           </p>
           <img src="./assets/images/review-icon.png" alt="review-icon" />
         </div>
@@ -565,11 +601,9 @@
         <div class="review1 mar">
           <p>
             푹 빠질 시간을 가져보세요. 시스템에 적합한 설정을 찾으십시오. 뭔가를
-            길들여<br />
-            이름을 지어보세요. 목숨을 바쳐 그들을 보호하고 그들의 상실을
-            애도하십시오. <br />
-            시간을 충분히 투자해 보면 방주가 당신에게 어떤 의미인지 알게 될
-            것입니다.
+            길들여 이름을 지어보세요. 목숨을 바쳐 그들을 보호하고 그들의 상실을
+            애도하십시오. 시간을 충분히 투자해 보면 방주가 당신에게 어떤
+            의미인지 알게 될 것입니다.
           </p>
           <img src="./assets/images/review-icon.png" alt="review-icon" />
         </div>
@@ -577,12 +611,10 @@
         <div class="review1 mar">
           <p>
             PvP 서버에서 시작되었습니다. 게임 경험이 없습니다. 집을 짓고 공룡을
-            길들이는<br />
-            데 며칠을 보냈고, 단지 거대한 공룡 농장을 원했습니다. 내 상황에 대해
-            꽤 기분이 좋고,<br />
-            나와 비슷한 상황에 있는 선수들을 상대로 승리를 맛보는 것을
-            좋아합니다. 기지를 부수고<br />
-            공룡을 죽여보세요. 나는 세상의 꼭대기에 있는 듯한 느낌을 받았다.
+            길들이는 데 며칠을 보냈고, 단지 거대한 공룡 농장을 원했습니다. 내
+            상황에 대해 꽤 기분이 좋고, 나와 비슷한 상황에 있는 선수들을 상대로
+            승리를 맛보는 것을 좋아합니다. 기지를 부수고 공룡을 죽여보세요. 나는
+            세상의 꼭대기에 있는 듯한 느낌을 받았다.
           </p>
           <img src="./assets/images/review-icon.png" alt="review-icon" />
         </div>

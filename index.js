@@ -1,131 +1,133 @@
 // info
-gsap.set(".text-container .text-wrapper1", {
-  width: 5,
-  backgroundColor: "#e1f41d",
-});
-
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".text-container .text-wrapper1",
-      scrub: 1,
-      start: "-=300",
-      end: "bottom bottom",
-    },
-  })
-  .to(".text-container .text-wrapper1", {
-    width: "30vw",
-    duration: 1,
-    ease: "none",
-    stagger: 5,
-    backgroundColor: "#000",
+if (innerWidth > 780) {
+  gsap.set(".text-container .text-wrapper1", {
+    width: 5,
+    backgroundColor: "#e1f41d",
   });
 
-gsap.set(".text-container .text-wrapper2", {
-  width: 5,
-  backgroundColor: "#e1f41d",
-});
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-container .text-wrapper1",
+        scrub: 1,
+        start: "-=300",
+        end: "bottom bottom",
+      },
+    })
+    .to(".text-container .text-wrapper1", {
+      width: "30vw",
+      duration: 1,
+      ease: "none",
+      stagger: 5,
+      backgroundColor: "#000",
+    });
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".text-container .text-wrapper2",
-      scrub: 1,
-      start: "-=400",
-      end: "bottom bottom",
-    },
-  })
-  .to(".text-container .text-wrapper2", {
-    width: "39vw",
-    duration: 1,
-    ease: "none",
-    stagger: 5,
-    backgroundColor: "#000",
+  gsap.set(".text-container .text-wrapper2", {
+    width: 5,
+    backgroundColor: "#e1f41d",
   });
-gsap.set(".text-container .text-wrapper3", {
-  width: 5,
-  backgroundColor: "#e1f41d",
-});
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".text-container .text-wrapper3",
-      scrub: 1,
-      start: "-=500",
-      end: "bottom bottom",
-    },
-  })
-  .to(".text-container .text-wrapper3", {
-    width: "25vw",
-    duration: 1,
-    ease: "none",
-    stagger: 5,
-    backgroundColor: "#000",
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-container .text-wrapper2",
+        scrub: 1,
+        start: "-=400",
+        end: "bottom bottom",
+      },
+    })
+    .to(".text-container .text-wrapper2", {
+      width: "39vw",
+      duration: 1,
+      ease: "none",
+      stagger: 5,
+      backgroundColor: "#000",
+    });
+  gsap.set(".text-container .text-wrapper3", {
+    width: 5,
+    backgroundColor: "#e1f41d",
   });
-gsap.set(".text-container .text-wrapper4", {
-  width: 5,
-  backgroundColor: "#e1f41d",
-});
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".text-container .text-wrapper4",
-      scrub: 1,
-      start: "-=500",
-      end: "bottom bottom",
-    },
-  })
-  .to(".text-container .text-wrapper4", {
-    width: "34vw",
-    duration: 1,
-    ease: "none",
-    stagger: 5,
-    backgroundColor: "#000",
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-container .text-wrapper3",
+        scrub: 1,
+        start: "-=500",
+        end: "bottom bottom",
+      },
+    })
+    .to(".text-container .text-wrapper3", {
+      width: "25vw",
+      duration: 1,
+      ease: "none",
+      stagger: 5,
+      backgroundColor: "#000",
+    });
+  gsap.set(".text-container .text-wrapper4", {
+    width: 5,
+    backgroundColor: "#e1f41d",
   });
-gsap.set(".text-container .text-wrapper5", {
-  width: 5,
-  backgroundColor: "#e1f41d",
-});
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".text-container .text-wrapper5",
-      scrub: 1,
-      start: "-=600",
-      end: "bottom bottom",
-    },
-  })
-  .to(".text-container .text-wrapper5", {
-    width: "35vw",
-    duration: 1,
-    ease: "none",
-    stagger: 5,
-    backgroundColor: "#000",
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-container .text-wrapper4",
+        scrub: 1,
+        start: "-=500",
+        end: "bottom bottom",
+      },
+    })
+    .to(".text-container .text-wrapper4", {
+      width: "34vw",
+      duration: 1,
+      ease: "none",
+      stagger: 5,
+      backgroundColor: "#000",
+    });
+  gsap.set(".text-container .text-wrapper5", {
+    width: 5,
+    backgroundColor: "#e1f41d",
   });
-gsap.set(".text-container .text-wrapper6", {
-  width: 5,
-  backgroundColor: "#e1f41d",
-});
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".text-container .text-wrapper6",
-      scrub: 1,
-      start: "-=700",
-      end: "bottom bottom",
-    },
-  })
-  .to(".text-container .text-wrapper6", {
-    width: "27vw",
-    duration: 1,
-    ease: "none",
-    stagger: 5,
-    backgroundColor: "#000",
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-container .text-wrapper5",
+        scrub: 1,
+        start: "-=600",
+        end: "bottom bottom",
+      },
+    })
+    .to(".text-container .text-wrapper5", {
+      width: "35vw",
+      duration: 1,
+      ease: "none",
+      stagger: 5,
+      backgroundColor: "#000",
+    });
+  gsap.set(".text-container .text-wrapper6", {
+    width: 5,
+    backgroundColor: "#e1f41d",
   });
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".text-container .text-wrapper6",
+        scrub: 1,
+        start: "-=700",
+        end: "bottom bottom",
+      },
+    })
+    .to(".text-container .text-wrapper6", {
+      width: "27vw",
+      duration: 1,
+      ease: "none",
+      stagger: 5,
+      backgroundColor: "#000",
+    });
+}
 // dino-img
 let image = document.getElementById("image");
 let images = [
@@ -229,6 +231,8 @@ $(".pick-wrapper .pick-dino .button1").on("click", (e) => {
   $(".pick-wrapper .pick-dino .dino1").toggleClass("toggle-btn");
   $(".pick-wrapper .type-text").toggleClass("toggle-btn");
   $(".pick-wrapper .pick-dino .theri-text").toggleClass("toggle-btn");
+  $(".pick-wrapper .pick-dino .button2").toggleClass("ad-btn");
+  $(".pick-wrapper .pick-dino .dino2 .learn").toggleClass("ad-btn");
 });
 $(".pick-wrapper .pick-dino .button2").on("click", (e) => {
   $(".pick-wrapper .pick-dino .button2").toggleClass("toggle-btn");
@@ -236,6 +240,8 @@ $(".pick-wrapper .pick-dino .button2").on("click", (e) => {
   $(".pick-wrapper .pick-dino .dino2").toggleClass("toggle-btn");
   $(".pick-wrapper .type-text").toggleClass("toggle-btn");
   $(".pick-wrapper .pick-dino .doye-text").toggleClass("toggle-btn");
+  $(".pick-wrapper .pick-dino .button1").toggleClass("ad-btn");
+  $(".pick-wrapper .pick-dino .dino1 .learn").toggleClass("ad-btn");
 });
 
 gsap.set(".pick-wrapper .pick-dino .dino1 img", {
@@ -384,16 +390,33 @@ let scrollContainer = document.querySelector(".boss-wrapper .boss-container");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
-// scrollContainer.addEventListener("wheel", (evt) => {
-//   evt.preventDefault();
-//   scrollContainer.scrollLeft += evt.deltaY;
-// });
+// Function to smoothly scroll left by a certain amount
+function smoothScrollLeft(container, amount) {
+  const start = container.scrollLeft;
+  const target = start - amount;
+  const startTime = performance.now();
+  const duration = 500; // Duration of the scroll animation in milliseconds
 
+  function step(timestamp) {
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    container.scrollLeft = start + (target - start) * progress;
+
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  }
+
+  window.requestAnimationFrame(step);
+}
+
+// Event listeners for nextBtn and backBtn
 nextBtn.addEventListener("click", () => {
-  scrollContainer.scrollLeft -= 500;
+  smoothScrollLeft(scrollContainer, 500);
 });
+
 backBtn.addEventListener("click", () => {
-  scrollContainer.scrollLeft += 500;
+  smoothScrollLeft(scrollContainer, -500);
 });
 
 // mobile-menu
@@ -401,4 +424,50 @@ $(".header-mobile").on("click", (e) => {
   $(".header-mobile-menu").toggleClass("click");
   $("header ul").toggleClass("click");
   $("header").toggleClass("click");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navList = document.getElementById("navList");
+  const navItems = navList.querySelectorAll("li");
+
+  // Calculate the position of each section
+  const sectionPositions = Array.from(sections).map((section) => {
+    return {
+      id: section.id,
+      offsetTop: section.offsetTop,
+      offsetBottom: section.offsetTop + section.offsetHeight,
+    };
+  });
+
+  // Function to update active navigation item based on scroll position
+  function updateActiveNavItem() {
+    const scrollPosition = window.scrollY;
+
+    // Find the section that is currently in view
+    const currentSection = sectionPositions.find((section) => {
+      return (
+        scrollPosition >= section.offsetTop &&
+        scrollPosition < section.offsetBottom
+      );
+    });
+
+    // Remove active class from all nav items
+    navItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    // Add active class to the corresponding nav item
+    if (currentSection) {
+      const correspondingNavItem = navList.querySelector(
+        `[href="#${currentSection.id}"]`
+      ).parentNode;
+      if (correspondingNavItem) {
+        correspondingNavItem.classList.add("active");
+      }
+    }
+  }
+
+  // Update active nav item on scroll
+  window.addEventListener("scroll", updateActiveNavItem);
 });
