@@ -1373,7 +1373,7 @@ nav ul li.active a {
     border-radius: 0 0;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   .intro-wrapper {
     height: 100vh;
   }
