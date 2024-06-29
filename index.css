@@ -556,7 +556,7 @@ nav ul li.active a {
   transition: 0.7s;
   transform: translateY(30%);
   line-height: 1.5;
-  width: 80%;
+  width: 40%;
 }
 .pick-wrapper .pick-dino .doye-text.toggle-btn {
   opacity: 1;
@@ -1817,6 +1817,9 @@ nav ul li.active a {
   }
   .pick-wrapper .pick-dino .pte {
     top: 70%;
+  }
+  .pick-wrapper .pick-dino .doye-text {
+    width: 80%;
   }
 }
 @media screen and (max-width: 390px) {
