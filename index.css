@@ -1272,7 +1272,7 @@ nav ul li.active a {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1480px) {
   .info-wrapper .text-container .text-wrapper p {
     font-size: 25px;
   }
