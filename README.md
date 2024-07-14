@@ -56,8 +56,7 @@ steam 및 나무위키에서 ark 사전조사 및 피그마 디자인 작업 완
 
 ❌ 랜덤 이미지 hover시 이미지가 멈추지 않음
 
-⭕
-    image.addEventListener("mouseenter", function () {
+⭕ image.addEventListener("mouseenter", function () {
       clearInterval(intervalId); // Clear the interval when hovering
     });
    
