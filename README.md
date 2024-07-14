@@ -17,7 +17,7 @@ steam 및 나무위키에서 ark 사전조사 및 피그마 디자인 작업 완
 디자인 - 상단 영역 구름 이미지 및 이미지 누끼따기
 퍼블리싱 - header 영역 및 구름 애니메이션 영역, 왼쪽 nav HTML, CSS, jQuery 구현 완료
 
-** 문제점 및 해결 **
+**문제점 및 해결**
 
 ```
 
@@ -41,7 +41,7 @@ steam 및 나무위키에서 ark 사전조사 및 피그마 디자인 작업 완
 디자인 - 육식공룡 위주로 이미지 누끼따기
 퍼블리싱 - 스크롤시 나타나는 글씨 영역 및 랜덤 이미지 영역 HTML, CSS, jQuery 구현
 
-** 문제점 및 해결 **
+**문제점 및 해결**
 
 ```
 
@@ -75,7 +75,7 @@ steam 및 나무위키에서 ark 사전조사 및 피그마 디자인 작업 완
 
 count 영역 HTML, CSS 및 pick 영역 HTML, CSS,jQuery 구현 완료
 
-** 문제점 및 해결 **
+**문제점 및 해결**
 
 ```
 
@@ -89,7 +89,7 @@ count 영역 HTML, CSS 및 pick 영역 HTML, CSS,jQuery 구현 완료
 
 카드 영역 HTML,CSS,jQuery 구현중, count 영역 jQuery 구현 완료
 
-** 문제점 및 해결 **
+**문제점 및 해결**
 
 ```
 
@@ -112,7 +112,7 @@ count 영역 HTML, CSS 및 pick 영역 HTML, CSS,jQuery 구현 완료
 
 카드 영역 HTML,CSS,jQuery 구현 완료
 
-** 문제점 및 해결 **
+**문제점 및 해결**
 
 ```
 
@@ -126,7 +126,7 @@ count 영역 HTML, CSS 및 pick 영역 HTML, CSS,jQuery 구현 완료
 
 preview 영역 및 ENCYCLOPEDIA 영역 HTML, CSS 구현 완료
 
-** 문제점 및 해결 **
+**문제점 및 해결**
 
 ```
 
